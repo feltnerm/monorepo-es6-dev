@@ -1,0 +1,44 @@
+{
+  "private": "true",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "jest": {
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(js|jsx)$",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "es6"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less)$": "<rootDir>/scripts/jest/style-mock.js"
+    }
+  },
+  "scripts": {
+    "fix": "standard --fix packages/*/src/**/*.js packages/*/src/**/*.jsx packages/*/test/**/*.jsx packages/*/test/**/*.jsx ",
+    "lesshint": "lesshint packages/*/src/*.less",
+    "lint": "standard packages/*/src/**/*.js packages/*/src/**/*.jsx packages/*/test/**/*.jsx packages/*/test/**/*.jsx",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "~20",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "~10",
+    "eslint-config-standard-jsx": "~4",
+    "eslint-config-standard-react": "~5",
+    "eslint-plugin-jasmine": "~2",
+    "eslint-plugin-promise": "~3",
+    "eslint-plugin-react": "~7",
+    "eslint-plugin-standard": "~3",
+    "jest": "~20",
+    "lesshint": "~3",
+    "standard": "~10"
+  }
+}
